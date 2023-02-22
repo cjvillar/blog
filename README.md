@@ -8,5 +8,12 @@ cd ChrisCodes
 `hugo server`
 
 ### build static files
-cd ChrisCodes
+cd ChrisCodes/
 `hugo -t PaperMod`
+
+### update ChrisCodes
+after building static files:
+cd ChrisCodes/public 
+git add .
+git commit -m "message"
+git push
