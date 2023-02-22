@@ -17,3 +17,5 @@
 - `git add .`
 - `git commit -m "message"`
 - `git push`
+
+For theme info go to: [PaperMod](https://github.com/adityatelange/hugo-PaperMod/wiki/Installation)
