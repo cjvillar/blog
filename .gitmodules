@@ -1,0 +1,4 @@
+[submodule "ChrisCodes/public"]
+	path = ChrisCodes/public
+	url = git@github.com:cjvillar/ChrisCodes.git
+	branch = main
