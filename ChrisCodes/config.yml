@@ -1,19 +1,26 @@
 baseURL: https://www.cjvillarreal.com/ChrisCodes
 languageCode: en-us
 title: ChrisCodes 
+paginate: 5
 theme: "PaperMod"
 
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
     - identifier: tags
       name: tags
       url: /tags/
-      weight: 20
+      weight: 10
     - identifier: Home
       name: cjvillarreal.com
       url: https://www.cjvillarreal.com/
-      weight: 30
+      weight: 20
+      
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
