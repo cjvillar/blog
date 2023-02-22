@@ -1,15 +1,15 @@
-# My blog with Hugo.
+# My Blog With Hugo.
 
 ### Add new post:
-cd ChrisCodes
-`hugo new --kind post content/posts/<name>.md`
+- `cd ChrisCodes`
+- `hugo new --kind post content/posts/<name>.md`
 
 ### Run server:
 `hugo server`
 
 ### Build static files:
-cd ChrisCodes/
-`hugo -t PaperMod`
+- `cd ChrisCodes/`
+- `hugo -t PaperMod`
 
 ### Update ChrisCodes:
 (after building static files)
