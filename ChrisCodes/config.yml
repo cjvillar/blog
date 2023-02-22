@@ -2,3 +2,18 @@ baseURL: https://www.cjvillarreal.com/ChrisCodes
 languageCode: en-us
 title: ChrisCodes 
 theme: "PaperMod"
+
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: Home
+      name: cjvillarreal.com
+      url: https://www.cjvillarreal.com/
+      weight: 30
