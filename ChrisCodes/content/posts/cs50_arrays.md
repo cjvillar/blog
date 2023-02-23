@@ -58,7 +58,7 @@ void print_bulb(int bit);
 int main(void)
 {
     printf("Message: ");
-    char message [400]; // get string of at max 400 characters
+    char message [400]; //get string of at max 400 characters, will update in week 4 
     scanf("%s", message);
 
     //loop through each word
