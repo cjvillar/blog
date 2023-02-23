@@ -47,7 +47,6 @@ the output will look something like this:
 Can you guess what it says?
 
 ```C
-#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
 
