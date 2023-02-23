@@ -35,7 +35,7 @@ cover:
 I just finished week 3 of the Harvard CS50x course and it’s getting interesting.
 Last week they introduced arrays. I finished the assignment to create a program in C that prompts the user for a message and then outputs the text in binary with dark and light emojis representing 0 and 1, respectively. It was fun to play around with and I wanted to translate my solution from C to python. 
 
-The CS50 course provides a C library, CS50, that provides some types that aren’t native to C, like `string` and `get_string()`. In my C code example below, I will omit the CS50 library so that it’s easier to compile and run without having to link the library's binary file. 
+The CS50 course provides a C library, CS50, which includes some types that aren’t native to C, like `string` and `get_string()`. In my C code example below, I will omit the CS50 library so that it’s easier to compile and run without having to link the library's binary file. 
 
 the output will look something like this:
 ```
