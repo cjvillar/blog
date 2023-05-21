@@ -1,7 +1,7 @@
 ---
 title: "AI Generated Art"
 date: 2023-2-22T11:30:03+00:00
-# weight: 1
+weight: 1
 # aliases: ["/first"]
 tags: [AI]
 author: "Chris"

@@ -1,7 +1,7 @@
 ---
-title: "CS50x Week 2"
+title: "C to Python"
 date: 2023-3-22T11:30:03+00:00
-# weight: 1
+weight: 3
 # aliases: ["/first"]
 tags: [CS50x, Arrays, C, Python]
 author: "Chris"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Some fun with C and Python."
+description: "A lesson from CS50x in C and Python."
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
@@ -24,29 +24,30 @@ ShowPostNavLinks: true
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
-# cover:
-#     image: "<image path/url>" # image path/url
-#     alt: "<alt text>" # alt text
-#     caption: "<text>" # display caption under cover
-#     relative: false # when using page bundles set this to true
-#     hidden: true # only hide on current single page
+cover:
+    image: "images/c_to_python.jpg" # image path/url
+    alt: "<alt text>" # alt text
+    caption: "<text>" # display caption under cover
+    relative: false # when using page bundles set this to true
+    hidden: true # only hide on current single page
 
 ---
-I just finished week 3 of the Harvard CS50x course and it’s getting interesting.
-Last week they introduced arrays. I finished the assignment to create a program in C that prompts the user for a message and then outputs the text in binary with dark and light emojis representing 0 and 1, respectively. It was fun to play around with and I wanted to translate my solution from C to python. 
+The Harvard CS50x course is really interesting.
+One assignment is to create a program in C that prompts the user for a message and then outputs the text in binary with dark and light emojis representing 0 and 1, respectively. It's fun to play around and create different "messages". I wanted to translate my solution code from C to python, so thats what I did here. 
 
 The CS50 course provides a C library, CS50, which includes some types that aren’t native to C, like `string` and `get_string()`. In my C code example below, I will omit the CS50 library so that it’s easier to compile and run without having to link the library's binary file. 
 
 the output will look something like this:
 ```
-⚫🟡⚫⚫🟡⚫⚫⚫
+⚫🟡🟡⚫🟡⚫⚫⚫
 ⚫🟡🟡⚫⚫🟡⚫🟡
 ⚫🟡🟡🟡🟡⚫⚫🟡
 ```
 
 Can you guess what it says?
 
-```C
+```c
+
 #include <stdio.h>
 #include <string.h>
 
@@ -57,9 +58,11 @@ void print_bulb(int bit);
 
 int main(void)
 {
+    //get user input of 400 chars and remove newline
     printf("Message: ");
-    char message [400]; //get string of at max 400 characters, will update in week 4 
-    scanf("%s", message);
+    char message [400]; 
+    fgets(message, 400, stdin);
+    message[strlen(message)-1] = '\0';
 
     //loop through each word
     int n = strlen(message);
@@ -104,6 +107,7 @@ void print_bulb(int bit)
 And now for my python example:
 
 ```python
+
 """
 Bulbs from cs50 adapted for python
 """
@@ -137,5 +141,27 @@ for i in message:
     # use reverese print because thats how the bits would be represented.
     print(*arr[::-1], sep="")
 ```
+The above Python code is similar to the C code, however, Python has more tricks up its sleeve. 
+
+Python has a built-in method, ```bin()``` which converts input to a binary string. Bin produces binary with an “0b” prefix, which is the Python representation of binary numbers. I remove this by slicing the strings first to characters,```[2:]```, and padding it with zeros using the ```zfill()``` method to ensure it has 8 bits.
+
+To loop through the bits (zeros and ones) and convert them into the emoji representation I use a shorter syntax called, list comprehension.
+ 
+Lastly, with the changes above I can remove the math module import since it is not used.
+
+Voila! A more concise and easier-to-read version:
+
+
+```python
+message = input("Message:")
+
+for i in message:
+    binary = bin(ord(i))[2:].zfill(8)  # convert to binary and pad with zeros
+    bits = [("\U000026AB" if bit == "0" else "\U0001F7E1") for bit in binary]
+    print(*bits, sep="")
+```
+
+
+
 
 *the message says 'hey'*
