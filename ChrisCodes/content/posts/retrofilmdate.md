@@ -25,7 +25,7 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "images/campsnap_camera.jpeg" # image path/url
+    image: "images/campsnap_camera.jpg" # image path/url
     alt: "<alt text>" # alt text
     caption: "" # display caption under cover
     relative: false # when using page bundles set this to true

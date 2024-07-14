@@ -1,5 +1,5 @@
 ---
-title: "SHA, AS IF! Secure Hash Algorithm 🔒"
+title: "SHA, Secure Hash Algorithm 🔒"
 date: 2023-5-21T11:30:03+00:00
 weight: 1
 # aliases: ["/first"]
@@ -25,8 +25,8 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "images/sha.jpg" # image path/url
-    alt: "AI generated art of person" # alt text
+    image: "images/sha.gif" # image path/url
+    alt: "Computer" # alt text
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
