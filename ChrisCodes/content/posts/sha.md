@@ -25,7 +25,7 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "images/sha.gif" # image path/url
+    image: "images/sha.jpg" # image path/url
     alt: "Computer" # alt text
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
