@@ -25,11 +25,11 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "images/campsnap_camera.jpg" # image path/url
+    image: "/images/campsnap_camera.jpg" # image path/url
     alt: "<alt text>" # alt text
     caption: "" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
+    relative: true # when using page bundles set this to true
+    hidden: false # only hide on current single page
 
 ---
 Nostalgia is a big business, especially with photographers. Whether it's Fuji Films film simulations, TikTok trending Digicam users, or film camera enthusiasts, We yearn to re-create the joys of the past.  I recently gave in and bought a very subpar, compared to today's standards, CampSnap camera just because it lacks a screen and mimics the feel of a disposable camera. It’s a blast to use despite the picture quality of a mid-2000s digital camera. However, it lacks the old-looking date stamp. Presenting a very niche tool: 
