@@ -16,8 +16,8 @@ menu:
       weight: 20
 
 params:
-  #usePageBundles: true
-  #showCoverImages: true
+  usePageBundles: false
+  showCoverImages: true
   assets:
     disableHLJS: false # to disable highlight.js
     disableFingerprinting: true
@@ -26,7 +26,7 @@ params:
     favicon32x32: "favicon.ico"
     apple_touch_icon: "favicon.ico"
     safari_pinned_tab: "favicon.ico" 
-    showCoverImages: true     
+    
       
 pygmentsUseClasses: true
 markup:

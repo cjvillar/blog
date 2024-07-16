@@ -25,13 +25,13 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "images/basiccover.jpg" # image path/url
+    image: "images/basic_book.jpg" # image path/url
     imageWidth: 100
     imageHeight: 100
     alt: "what AI thinks the 80s was like" # alt text
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
+    hidden: false # only hide on current single page
 
 ---
 
